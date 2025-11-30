@@ -3,7 +3,7 @@ import './lobby.css';
 import { io } from 'socket.io-client';
 import { soundManager } from './SoundManager.js';
 
-const socket = io('http://localhost:3000');
+const socket = io();
 const app = document.querySelector('#app');
 
 // Initialize audio on first interaction
